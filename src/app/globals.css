@@ -2,13 +2,6 @@
 
 body{
     margin:0;
-    background-image: url("/Chibyke.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    width:100%;
-    opacity: -1;
-    z-index: 10000;
+   background-color: black;
+   color: white;
 }
