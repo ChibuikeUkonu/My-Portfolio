@@ -5,3 +5,13 @@ body{
    background-color: black;
    color: white;
 }
+.hamburg{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+@media (max-width: 768px){
+    .hamburg{
+        display: flex;
+    }
+}

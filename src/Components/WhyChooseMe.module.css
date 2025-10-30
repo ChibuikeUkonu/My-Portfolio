@@ -1,0 +1,36 @@
+
+        .whychoose {
+          background: black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .whychoose h2{
+            padding: 30px 20px;
+            text-transform: uppercase;
+        }
+        .reasons {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 30px;
+        }
+        
+        .reasoncard {
+          background: white;
+          color: rgb(147, 139, 139);
+          padding: 30px;
+          border-radius: 10px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .reasoncard:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .reasonicon {
+          font-size: 2.5rem;
+          color: var(--primary);
+          margin-bottom: 20px;
+        }

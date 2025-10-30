@@ -3,5 +3,31 @@
     flex-direction: column;
 }
 .infomation{
-    
+   display: flex; 
+   margin-top: 20px;
+}
+.infomation h1{
+font-size: larger;
+ padding: 30px 70px;
+ align-content: center;
+ color: cadetblue;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ text-transform: uppercase;
+}
+.services{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.services h2{
+    display: flex;
+    margin: 10px 90px;
+    text-transform: uppercase;
+    font: 3em sans-serif;
+}
+.services p{
+    display: flex;
+    color: rgb(136, 138, 138);
+    font: 1.2em sans-serif;
+
 }

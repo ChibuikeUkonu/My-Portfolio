@@ -1,0 +1,56 @@
+
+        .projects {
+          background:black;
+          margin: 20px 30px;
+        }
+        .container h2{
+            margin: 10px 20px;
+            text-transform: uppercase;
+        }
+        .projects_grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 30px;
+        }
+        
+        .project_card {
+          border-radius: 10px;
+          overflow: hidden;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+          transition: transform 0.3s ease;
+        }
+        
+        .project_card:hover {
+          transform: translateY(-10px);
+        }
+        
+        .project_image {
+          height: 200px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+        
+        .project_content {
+          padding: 20px;
+          background: black;
+        }
+        
+        .project_tech {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          margin: 15px 0;
+        }
+        
+        .tech_tag {
+          background: #e0f2fe;
+          color: var(--primary);
+          padding: 5px 10px;
+          border-radius: 20px;
+          font-size: 0.8rem;
+          font-weight: 500;
+        }

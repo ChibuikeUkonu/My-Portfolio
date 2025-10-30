@@ -90,6 +90,9 @@
             .image_content p {
                 font-size: 1rem;
             }
+            .logo h1{
+                display: none;
+            }
         }
         .Main_head {
             width: 100%;
@@ -160,4 +163,15 @@
             left: 50%;
             position: absolute;
         }
-        
+        .logo{
+            display: flex;
+            top: 0;
+            left: 10px;
+            padding: 10px 20px;
+            align-items: center;
+            font: 1.5em sans-serif;
+            color: rgb(235, 245, 245);
+            font-weight: 600;
+            position: absolute;
+        }
+       
