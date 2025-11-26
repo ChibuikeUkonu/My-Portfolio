@@ -15,11 +15,19 @@
         .footer_logo {
           font-size: 1.8rem;
           font-weight: 800;
+          color:#86b0eb;
           margin-bottom: 15px;
         }
         
         .footer_links h3 {
-          color: white;
+          color: #86b0eb;
+          margin-bottom: 20px;
+          font-weight: 600;
+          font-size: 1.2rem;
+        }
+        .footer_link h3{
+          color: #86b0eb;
+          font-weight: 600;
           margin-bottom: 20px;
           font-size: 1.2rem;
         }
@@ -33,7 +41,7 @@
         }
         
         .footer_links a {
-          color: #cbd5e1;
+          color: #000;
           text-decoration: none;
           transition: color 0.3s ease;
         }

@@ -39,7 +39,7 @@ const WhyChooseMe = () => {
   ]
 
   return (
-    <section className={style.whychoose} id="whychoose">
+    <section className={style.whychoose} id="WhyChooseMe">
       <div className="container">
         <h2>Why Choose Chibuike?</h2>
         <div className={style.reasons}>

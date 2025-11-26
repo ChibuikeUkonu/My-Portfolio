@@ -9,39 +9,55 @@ import { useRef } from 'react';
 
 
 const Header = () => {
+   const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
+  const closeMenu = () => {
+    setIsMenuOpen(false)
+  }
   return (
-    <div className={styles.container}>
-      <div className={styles.Navbar}>
-        <ul>
-        <Link href='#'>Home</Link>
-        <Link href='#'>Contact</Link>
-        <Link href='#'>Portfolio</Link>
-        <Link href='#'>Certificate</Link>
-        </ul>
-        {/* <Image className={styles.hamburg} src='/hamburger.png'onClick={toggleMenu}width={30}height={30} alt="" />
-        <ul 
-        ref={menuRef}
-        className={`${styles.nav_menu} ${isMenuOpen ? styles.active : ''}`}/>
-      <Image className={styles.nav_mob_close} src='./menu.png'onClick={toggleMenu}width={30}height={30} alt="" /> */}
+   <header>
+      <div className={styles.container}>
+        <nav className={styles.navbar}>
+          <div className={styles.logo}style={{color: '#86b0eb'}}>Chibuike U<span>.</span></div>
+          <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+            <li><a href="#Header" onClick={closeMenu}>Home</a></li>
+            <li><a href="#WhyChooseMe" onClick={closeMenu}>WhyChooseMe</a></li>
+            <li><a href="#WhyChooseMe" onClick={closeMenu}>Skills</a></li>
+            <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
+            <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+          </ul>
+          <div className={styles.menu_toggle} onClick={toggleMenu}>
+            <i className="fas fa-bars"></i>
+          </div>
+        </nav>
       </div>
 
       <div className={styles.Main_head}>
         <div className={styles.image_content}>
-          <img src="./Excl.jpg" alt="image" />
-          <p>Welcome to my portfolio! I'm a passionate <strong >full-stack developer</strong> with
-             over 1 year of experience creating beautiful, functional websites,
-              I have experience in Html |CSS| JavaScript| node Js| Mongo DB</p>
+
+          <img src="./Excl.jpg" alt="Chibuike Ukonu - Full Stack Developer" />
+          <p>
+            Welcome to my portfolio! I'm a passionate <strong>full-stack developer</strong> with
+            over 1 year of experience creating beautiful, functional websites.
+            I have experience in HTML | CSS | JavaScript | Node.js | MongoDB
+          </p>
         </div>
-          <div className={styles.download}>
-          <a href="https://www.dropbox.com/scl/fi/m7gqqpgh54qwhlpkwfwpf/CHIBUIKE-UKONU-1.pdf?rlkey=aen2gont57lowxvmvlh2f2lok&st=hd8ulnvy&dl=1" download="CHIBUIKE UKONU.pdf">
-    Download Your CV
-    </a>
-       </div>
-    </div>
-          <div className={styles.logo}>
-            <h1>Chibuike U.</h1>
-            </div>
+        
+        <div className={styles.download}>
+          <a 
+            href="https://www.dropbox.com/scl/fi/m7gqqpgh54qwhlpkwfwpf/CHIBUIKE-UKONU-1.pdf?rlkey=aen2gont57lowxvmvlh2f2lok&st=hd8ulnvy&dl=1" 
+            download="CHIBUIKE-UKONU-CV.pdf"
+          >
+            Download CV
+          </a>
+        </div>
+        
       </div>
+    </header>
   )
 }
 

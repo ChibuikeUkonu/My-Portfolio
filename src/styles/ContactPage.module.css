@@ -1,10 +1,12 @@
         .contact {
-          background: linear-gradient(135deg, #090909 0%, #ebedef 100%);
+          background: linear-gradient(135deg, #756685 0%, #ebedef 100%);
           margin:30px ;
           color: #090909;
         }
         .contact h2{
             margin: 50px 70px;
+            color:#7c18e7;
+            margin: 2px 50px;
         }
         .contact_info h3{
           margin:20px;  
@@ -44,7 +46,7 @@
         }
         
         .contact_form {
-          background: white;
+        background:linear-gradient(135deg, #787676 0%, #262627 100%);
           padding: 30px;
           border-radius: 10px;
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);

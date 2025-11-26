@@ -2,8 +2,9 @@
 
 body{
     margin:0;
-   background-color: black;
-   color: white;
+    padding:0;
+    background: white;
+   color: black;
 }
 .hamburg{
     width: 30px;
