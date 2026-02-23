@@ -6,7 +6,7 @@
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
           gap: 13px;
-          margin:15px 15px;
+          margin:7px 15px;
         }
         
         .skill_card {
@@ -18,7 +18,7 @@
           transition: transform 0.3s ease;
         }
         .container h2{
-            margin: 10px 40px;
+            margin: 20px 70px;
             color:#86b0eb;
             text-transform: uppercase;
             font-weight: 700;

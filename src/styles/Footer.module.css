@@ -1,4 +1,8 @@
 
+        .container{
+          margin-top: 50px;
+          padding: 20px 30px;
+        }
         .footer {
           background: var(--dark);
           color: white;
@@ -13,10 +17,10 @@
         }
         
         .footer_logo {
-          font-size: 1.8rem;
-          font-weight: 800;
+          font-size: 1.5rem;
+          font-weight: 900;
           color:#86b0eb;
-          margin-bottom: 15px;
+          margin-bottom: 5px;
         }
         
         .footer_links h3 {
@@ -35,7 +39,6 @@
         .footer_links ul {
           list-style: none;
         }
-        
         .footer_links li {
           margin-bottom: 10px;
         }
@@ -47,7 +50,7 @@
         }
         
         .footer_links a:hover {
-          color: white;
+          color: rgb(170, 124, 233);
         }
         
         .social_links {

@@ -43,7 +43,7 @@ const [formData, setFormData] = useState({
       const result = await response.json();
 
       if (result.success) {
-        alert('Thank you for your message! I will get back to you soon.');
+        alert('Thank you for your message! I will get back to you as soon as possible.');
         setFormData({
           name: '',
           email: '',
@@ -81,7 +81,7 @@ const [formData, setFormData] = useState({
               </div>
               <div>
                 <h4>Phone</h4>
-                <p>+2349165933656,+2347043678668</p>
+                <p>+2349165933656</p>
               </div>
             </div>
             <div className={style.contact_item}>

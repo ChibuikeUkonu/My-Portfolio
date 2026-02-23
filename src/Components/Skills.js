@@ -32,6 +32,11 @@ export default function Skills() {
       icon: 'fab fa-node-js',
       name: 'Node.js',
       description: 'Server-side JavaScript for building scalable backend services and APIs.'
+    },
+    {
+      icon: 'fab fa-aws',
+      name: 'AWS',
+      description: 'Cloud computing skills for deploying, managing, and scaling applications on AWS infrastructure.'
     }
   ]
   return (

@@ -1,0 +1,6 @@
+- [x] Update Header.module.css: Change .Navbar to .navbar, add nav-links hide/show in media query, position menu_toggle right, remove left:90px from .Main_head in media, center .download
+- [x] Test the responsive design on small screens
+- [x] Update menu items in Header.jsx: Change "WhyChooseMe" to "Why Choose Us", fix Skills href to "#skills", Projects to "#projects", Contact to "#contact"
+- [x] Replace menu toggle icon with RxHamburgerMenu
+- [x] Add styles for mobile menu links in CSS
+- [x] Ensure links navigate to sections
