@@ -42,7 +42,7 @@ const Footer = () => {
               <li><a href="WhyChooseMe">WhyChooseMe</a></li>
               <li><a href="Skills">Skills</a></li>
               <li><a href="Projects">Projects</a></li>
-              <li><a href="Contact">Contact</a></li>
+              <li><a href="contact">Contact</a></li>
             </ul>
           </div>
           <div className={style.footer_link}>
