@@ -9,20 +9,19 @@ import { useEffect } from "react";
 const projects = [
   {
     id: 1,
-    title: "Elite Status Page",
-    shortDescription: "Dockerized monitoring system deployed on AWS.",
-    description:
-      "A fully dockerized monitoring dashboard deployed on AWS EC2 with Nginx reverse proxy and CI/CD integration.",
-    images: ["/Chibyke2.jpg"],
-    tech: ["Next.js", "Docker", "AWS", "Nginx"],
-    githubUrl: "https://github.com/yourrepo",
-    liveUrl: "https://yourliveurl.com",
+    title: "Portfolio Website",
+    shortDescription: "A personal portfolio website showcasing my projects and skills.",
+    description:"This portfolio website was built using Next.js, Tailwind CSS, and Framer Motion for smooth animations. It features a responsive design, dark mode support, and showcases my projects and skills.",
+    images: ["/Portfolio.png"],
+    tech: ["HTML", "CSS", "JAVASCIPT", "NEXT.JS"],
+    githubUrl: "https://github.com/ChibuikeUkonu/My-Portfolio.git",
+    liveUrl: "https://chibykeigbe.netlify.app/",
     status: "Completed",
     features: [
-      "Docker containerization",
-      "EC2 deployment",
-      "Nginx reverse proxy",
-      "Responsive UI",
+      "Responsive Design",
+      "Dark Mode Support",
+      "Project Showcase",
+      "Smooth Animations"
     ],
    },
    {
@@ -35,7 +34,7 @@ const projects = [
      status: "Completed",
     githubUrl: "https://github.com/TLE84/NEOCON-INTEGRATED-SERVICES.git",
     tags: ["React", "Socket.io", "PostgreSQL", "Redis"],
-    tech: ["HTML", "CSS", "JavaScript", "MongoDB", "React", "Node.js", "AWS"],
+    tech: ["HTML", "CSS", "JavaScript","React", "Node.js", "AWS"],
     features: ["Real-time Updates", "Drag & Drop", "Team Collaboration", "File Uploads"]
    },
   // Add more projects here
@@ -117,7 +116,7 @@ export default function ProjectsSection() {
               </p>
 
               <div className="flex flex-wrap gap-2">
-                {project.tech?.slice(0, 3).map((tech) => (
+                {project.tech?.slice(0, 4).map((tech) => (
                   <span
                     key={tech}
                     className="bg-gray-800 text-xs px-2 py-1 rounded-md"

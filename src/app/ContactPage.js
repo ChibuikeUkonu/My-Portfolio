@@ -147,7 +147,7 @@ const [formData, setFormData] = useState({
                   required
                 ></textarea>
               </div>
-              <button type="submit" className="btn">Send Message</button>
+              <button type="submit" className="cursor-pointer">Send Message</button>
             </form>
           </div>
         </div>

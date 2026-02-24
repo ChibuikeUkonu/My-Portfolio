@@ -16,7 +16,7 @@ const Footer = () => {
       src="/Brown.jpg" 
       alt="Chibuike Ukonu - Full Stack Developer" 
       fill
-      className="object-cover"
+      className={style.footer_image}
       priority
     />
   </div>
@@ -27,7 +27,7 @@ const Footer = () => {
   </div>
 
 </div>
-            <p>Full-stack developer crafting digital experiences that drive results and exceed expectations.</p>
+            <p className={style.paragrah}>Full-stack developer crafting digital experiences that drive results and exceed expectations.</p>
             <div className={style.social_links}>
               <a href="https://x.com/chibykeukonu?t=Vk4rstdofNENNxgU52WVgw&s=09" className={style.social_link}><i className="fab fa-twitter"></i></a>
               <a href="https://www.linkedin.com/in/chibuike-ukonu-7582ab35a/" className={style.social_link}><i className="fab fa-linkedin-in"></i></a>

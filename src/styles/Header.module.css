@@ -6,7 +6,46 @@
   position: relative;
   overflow-x: hidden;
 }
+.image_container {
+  position: relative;
+  display: inline-block;
+  padding: 6px; /* Space for border */
+  border-radius: 20px;
+  background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ADEDE, #ff6ec4);
+  background-size: 600% 600%;
+  animation: gradientBorder 6s ease infinite, float 4s ease-in-out infinite;
+}
 
+.profile_image {
+  border-radius: 16px;
+  display: block;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Animated gradient border */
+@keyframes gradientBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 /* ===== Navbar Styles ===== */
 .navbar_container {
   position: fixed;
