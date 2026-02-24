@@ -104,7 +104,7 @@ const Header = () => {
               <li><a href="#" onClick={closeMenu}>Home</a></li>
               <li><a href="#WhyChooseMe" onClick={closeMenu}>Why Choose Me</a></li>
               <li><a href="#Skills" onClick={closeMenu}>Skills</a></li>
-              <li><a href="#portfolio" onClick={closeMenu}>Portfolio</a></li>
+              {/* <li><a href="#portfolio" onClick={closeMenu}>Portfolio</a></li> */}
               <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
             </ul>
           </div>

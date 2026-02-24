@@ -8,7 +8,7 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // 2 seconds loader
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {loading ? (
+        {loading && (
           <div className="loader-wrapper">
             <div className="dots">
               <span></span>
@@ -24,9 +24,8 @@ export default function RootLayout({ children }) {
               <span></span>
             </div>
           </div>
-        ) : (
-          children
         )}
+        {!loading && children}
       </body>
     </html>
   );
