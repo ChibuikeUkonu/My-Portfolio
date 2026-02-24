@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
 
     return () => clearTimeout(timer);
   }, []);
+  
 
   return (
     <html lang="en">
