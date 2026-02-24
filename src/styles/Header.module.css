@@ -163,8 +163,9 @@
 
 .nav_links_mobile {
   position: absolute;
-  top: 130%;
+  top: 190%;
   left: 50%;
+  background-color: #0a192f;
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
@@ -284,9 +285,9 @@
   background: linear-gradient(135deg, #64ffda 0%, #86b0eb 100%);
   color: #0a192f;
   text-decoration: none;
-  padding: 0.5rem 5rem;
+  padding: 0.3rem 6rem;
   border-radius: 30px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1rem;
   transition: all 0.3s ease;
   box-shadow: 0 10px 20px rgba(100, 255, 218, 0.2);
@@ -310,8 +311,8 @@
 
 .greeting {
   font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 1.2rem;
   background: linear-gradient(135deg, #64ffda 0%, #86b0eb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -322,6 +323,7 @@
   font-size: 1.1rem;
   line-height: 1.5;
   color: #8892b0;
+  align-items: center;
   max-width: 600px;
 }
 
