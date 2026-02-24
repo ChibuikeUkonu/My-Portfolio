@@ -3,8 +3,9 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from '@/styles/Header.module.css'
-import Link from 'next/link';
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
+import { TypeAnimation } from 'react-type-animation';
+import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from 'react';
 import { FaDownload } from "react-icons/fa";
 
@@ -20,7 +21,26 @@ const Header = () => {
   const closeMenu = () => {
     setIsMenuOpen(false)
   }
-
+  const textLines = [
+  <>
+    Welcome to my portfolio! I'm a passionate{" "}
+    <strong>full-stack developer</strong> with over 1 year of experience
+    creating beautiful, functional websites.
+  </>,
+  <>
+    I specialize in{" "}
+    <strong>HTML | CSS | JavaScript | Node.js | MongoDB</strong> and
+    building modern web applications.
+  </>,
+  <>
+    I love turning ideas into reality through code and am always eager
+    to learn new technologies and take on exciting projects.
+  </>,
+  <>
+    I am also a skilled <strong>AWS Cloud Practitioner</strong> feel
+    free to explore my work and get in touch!
+  </>
+];
   // Close menu when clicking outside
   useEffect(() => {
   const handleClickOutside = (event) => {
@@ -49,6 +69,7 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+  
 
   return (
    <header className={styles.header}>
@@ -61,7 +82,7 @@ const Header = () => {
             <li><a href="#" onClick={closeMenu}>Home</a></li>
             <li><a href="#WhyChooseMe" onClick={closeMenu}>Why Choose Me</a></li>
             <li><a href="#Skills" onClick={closeMenu}>Skills</a></li>
-            <li><a href="#portfolio" onClick={closeMenu}>Portfolio</a></li>
+            {/* <li><a href="#portfolio" onClick={closeMenu}>Portfolio</a></li> */}
             <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
           </ul>
 
@@ -124,14 +145,49 @@ const Header = () => {
             {/* Welcome Text */}
             <div className={styles.welcome_text}>
               <h1 className={styles.greeting}>Hi, I'm Chibuike</h1>
-              <p className={styles.introduction}>
+              {/* const textLines = [
+  "Welcome to my portfolio!",
+  "I'm a passionate full-stack developer with over 1 year of experience creating beautiful, functional websites.",
+  "I specialize in HTML | CSS | JavaScript | Node.js | MongoDB and building modern web applications.",
+  "I love turning ideas into reality through code and am always eager to learn new technologies and take on exciting projects.",
+  "I am also a skilled AWS Cloud Practitioner — feel free to explore my work and get in touch!"
+]; */}
+
+<motion.div
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+  variants={{
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.6
+      }
+    }
+  }}
+  className={styles.introduction}
+>
+  {textLines.map((line, index) => (
+    <motion.p
+      key={index}
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0 }
+      }}
+      transition={{ duration: 0.6 }}
+    >
+      {line}
+    </motion.p>
+  ))}
+</motion.div>
+              {/* <p className={styles.introduction}>
                 Welcome to my portfolio! I'm a passionate <strong>full-stack developer</strong> with
                 over 1 year of experience creating beautiful, functional websites.
                 I specialize in <strong>HTML | CSS | JavaScript | Node.js | MongoDB</strong> 
                 and building modern web applications. I love turning ideas into reality through code,
                 and am always eager to learn new technologies and take on exciting projects,
                and also I am a skilled <strong>Aws cloud practitioner</strong> so feel free to explore my work and get in touch!
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
