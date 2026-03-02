@@ -18,19 +18,19 @@
         
         .footer_logo {
           font-size: 1.5rem;
-          font-weight: 900;
-          color:#86b0eb;
+          font-weight: 700;
+          color:rgb(46, 45, 45);
           margin-bottom: 5px;
         }
         
         .footer_links h3 {
-          color: #86b0eb;
+          color: #767474;
           margin-bottom: 20px;
           font-weight: 600;
           font-size: 1.2rem;
         }
         .footer_link h3{
-          color: #86b0eb;
+          color: #767474;
           font-weight: 600;
           margin-bottom: 20px;
           font-size: 1.2rem;
@@ -57,7 +57,7 @@
   display: inline-block;
   padding: 6px; /* Space for border */
   border-radius: 20px;
-  background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ADEDE, #ff6ec4);
+  /* background: linear-gradient(270deg, #7873f5, #4ADEDE); */
   background-size: 600% 600%;
   animation: gradientBorder 6s ease infinite, float 4s ease-in-out infinite;
 }
@@ -98,7 +98,7 @@
           margin: 10px 19px;
         }
         .paragrah{
-          color: #94a3b8;
+          color: #4c4c4d;
           font-size: 1rem;
           margin: 10px 20px;
         }
@@ -120,8 +120,10 @@
         .copyright {
           text-align: center;
           padding-top: 20px;
+          font-weight: 500;
           border-top: 1px solid rgba(255, 255, 255, 0.1);
-          color: #94a3b8;
+          color: #141515;
           font-size: 0.9rem;
         }
+        
     

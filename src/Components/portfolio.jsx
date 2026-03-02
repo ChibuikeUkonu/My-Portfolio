@@ -92,7 +92,7 @@ export default function ProjectsSection() {
 
   return (
     <section className="py-10 px-6 max-w-8xl mx-auto">
-      <h2 className="text-3xl font-bold mb-7 text-center bg-gradient-to-r from-green-600 to-blue-900 text-transparent bg-clip-text">
+      <h2 className="text-3xl font-bold mb-7 text-center bg-black text-transparent bg-clip-text">
         Completed Projects & Certifications
       </h2>
 

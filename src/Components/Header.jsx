@@ -29,7 +29,7 @@ const Header = () => {
   </>,
   <>
     I specialize in{" "}
-    <strong>HTML | CSS | JavaScript | Node.js | MongoDB</strong> and
+    <strong>HTML | CSS | JavaScript | Node.js |  | Next.js | React.js | MongoDB</strong> and
     building modern web applications.
   </>,
   <>
@@ -75,7 +75,7 @@ const Header = () => {
    <header className={styles.header}>
       <div className={`${styles.navbar_container} ${isScrolled ? styles.scrolled : ''}`}>
         <nav className={styles.navbar}>
-          <div className={styles.logo} style={{color: '#86b0eb'}}>Chibuike U<span>.</span></div>
+          <div className={styles.logo} style={{color: '#767474'}}>Chibuike U<span>.</span></div>
           
           {/* Desktop Menu */}
           <ul className={styles.nav_links_desktop}>
@@ -132,7 +132,7 @@ const Header = () => {
             {/* Download CV Button */}
             <div className={styles.download_section}>
               <a 
-                href="https://www.dropbox.com/scl/fi/m7gqqpgh54qwhlpkwfwpf/CHIBUIKE-UKONU-1.pdf?rlkey=aen2gont57lowxvmvlh2f2lok&st=hd8ulnvy&dl=1" 
+                href="https://www.dropbox.com/scl/fi/k8193fzcztp12cba0quy1/Igbe-Chibuike-Ukonu.pdf?rlkey=pzq4dpv3tza5j2gd951xgcwhu&st=ktwj24va&dl=1" 
                 className={styles.download_btn}
                 target="_blank"
                 rel="noopener noreferrer"

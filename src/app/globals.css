@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
-body{
+/* body{
     margin:0;
     padding:0;
-    background: white;
+    background: black;
    color: black;
-}
+} */
 .hamburg{
     width: 30px;
     height: 30px;

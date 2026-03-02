@@ -56,7 +56,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="copyright">
+        <div className={style.copyright}>
           <p>&copy; 2026 Chibuike. All Rights Reserved.</p>
           <p>Developed By Chibuike Ukonu Igbe</p>
         </div>

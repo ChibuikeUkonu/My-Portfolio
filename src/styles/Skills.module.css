@@ -10,7 +10,7 @@
         }
         
         .skill_card {
-          background:linear-gradient(135deg, rgb(231, 177, 77) 0%, #00f2fe 100%);
+          background:#767474;
           padding: 25px;
           border-radius: 10px;
           text-align: center;
@@ -19,7 +19,7 @@
         }
         .container h2{
             margin: 20px 70px;
-            color:#86b0eb;
+            color:black;
             text-transform: uppercase;
             font-weight: 700;
         }
