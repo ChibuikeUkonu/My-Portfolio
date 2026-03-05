@@ -75,7 +75,7 @@ const Header = () => {
    <header className={styles.header}>
       <div className={`${styles.navbar_container} ${isScrolled ? styles.scrolled : ''}`}>
         <nav className={styles.navbar}>
-          <div className={styles.logo} style={{color: '#767474'}}>Chibuike U<span>.</span></div>
+          <div className={styles.logo} style={{color: '#928f8f'}}>Chibuike U<span>.</span></div>
           
           {/* Desktop Menu */}
           <ul className={styles.nav_links_desktop}>
