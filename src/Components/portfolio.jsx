@@ -102,7 +102,7 @@ export default function ProjectsSection() {
           <motion.div
             key={project.id}
             whileHover={{ scale: 1.05 }}
-            className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg cursor-pointer"
+            className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg cursor-pointer text-blue-200"
             onClick={() => openProject(index)}
           >
             <div className="relative h-48 w-full">
@@ -121,7 +121,7 @@ export default function ProjectsSection() {
               <h3 className="text-xl font-semibold mb-2">
                 {project.title}
               </h3>
-              <p className="text-gray-400 mb-4">
+              <p className="text-gray-200 mb-4">
                 {project.shortDescription}
               </p>
 
@@ -129,7 +129,7 @@ export default function ProjectsSection() {
                 {project.tech?.slice(0, 4).map((tech) => (
                   <span
                     key={tech}
-                    className="bg-gray-800 text-xs px-2 py-1 rounded-md"
+                    className="bg-gray-800 text-xs px-2 py-1 rounded-md col-white"
                   >
                     {tech}
                   </span>

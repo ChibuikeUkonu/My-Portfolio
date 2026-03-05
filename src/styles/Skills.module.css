@@ -10,7 +10,7 @@
         }
         
         .skill_card {
-          background:#767474;
+          background:rgb(43, 59, 43);
           padding: 25px;
           border-radius: 10px;
           text-align: center;
@@ -26,9 +26,16 @@
         .skill_card:hover {
           transform: translateY(-5px);
         }
-        
+        .skill_card h3{
+          color:white;
+          font-weight: 600;
+        }
+        .skill_card p{
+          color:white;
+          font-weight: 400;
+        }
         .skill_icon {
           font-size: 3rem;
-          color: var(--primary);
+          color: white;
           margin-bottom: 20px;
         }

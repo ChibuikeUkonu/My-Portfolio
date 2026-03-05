@@ -10,8 +10,7 @@ const Footer = () => {
           <div className={style.footer_about}>
             <div className="flex flex-col items-center">
 
-  {/* Image Container */}
-  <div className="relative w-[300px] h-[300px] overflow-hidden rounded-full">
+  {/* <div className="relative w-[300px] h-[300px] overflow-hidden rounded-full">
     <Image 
       src="/Brown.jpg" 
       alt="Chibuike Ukonu - Full Stack Developer" 
@@ -19,7 +18,7 @@ const Footer = () => {
       className={style.footer_image}
       priority
     />
-  </div>
+  </div> */}
 
   {/* Text */}
   <div className={style.footer_logo}>

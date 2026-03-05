@@ -90,7 +90,7 @@ const [formData, setFormData] = useState({
               </div>
               <div>
                 <h4>Location</h4>
-                <p>Nigeria</p>
+                <p>Remote</p>
               </div>
             </div>
           </div>
@@ -147,7 +147,7 @@ const [formData, setFormData] = useState({
                   required
                 ></textarea>
               </div>
-              <button type="submit" className="cursor-pointer">Send Message</button>
+              <button type="submit" className= {style.btn}>Send Message</button>
             </form>
           </div>
         </div>
