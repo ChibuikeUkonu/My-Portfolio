@@ -6,6 +6,7 @@ import Footer from '@/Components/Footer';
 import Skills from '@/Components/Skills';
 import ContactPage from '@/app/ContactPage'
 import Portfolio from '../Components/portfolio';
+import BackToTop from '@/Components/BackToTop';
 
 const page = () => {
   return (
@@ -17,6 +18,8 @@ const page = () => {
     <div>
     <ContactPage/>
     <Footer/>
+
+    <BackToTop/>
     </div>
    </div>
   )
