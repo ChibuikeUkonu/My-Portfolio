@@ -7,6 +7,7 @@ import Skills from '@/Components/Skills';
 import ContactPage from '@/app/ContactPage'
 import Portfolio from '../Components/portfolio';
 import BackToTop from '@/Components/BackToTop';
+import ChatBot from '@/Components/ChatBot';
 
 const page = () => {
   return (
@@ -17,8 +18,8 @@ const page = () => {
     <WhyChooseMe/>
     <div>
     <ContactPage/>
+    <ChatBot/>
     <Footer/>
-
     <BackToTop/>
     </div>
    </div>
