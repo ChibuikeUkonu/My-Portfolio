@@ -44,7 +44,7 @@ export default function ChatBot() {
       {/* 🔵 Floating Launcher (WhatsApp/Intercom style) */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-blue-600 text-white shadow-xl flex items-center justify-center hover:scale-105 transition top-90 right-0 cursor-pointer z-50"
+        className="fixed bottom-6 right-6 w-10 h-10 rounded-full bg-blue-600 text-white shadow-xl flex items-center justify-center hover:scale-105 transition top-110 left-0 cursor-pointer z-50"
       >
         {isOpen ? "✕" : "💬"}
       </button>
